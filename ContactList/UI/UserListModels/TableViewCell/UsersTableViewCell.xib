@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="UsersTableViewCell" rowHeight="80" id="62W-8M-xZW" customClass="UsersTableViewCell" customModule="ContactList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="62W-8M-xZW" id="kDu-me-tcn">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TxB-g0-DXD">
+                        <rect key="frame" x="16" y="14" width="50" height="51.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="51.5" id="VwZ-3A-rdW"/>
+                            <constraint firstAttribute="width" constant="50" id="fbi-sr-rSR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6x1-y6-8ID">
+                        <rect key="frame" x="74" y="43" width="258" height="22.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ph-ys-q3d">
+                        <rect key="frame" x="74" y="14" width="258" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Qhv-08-1WI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6ph-ys-q3d" firstAttribute="trailing" secondItem="6x1-y6-8ID" secondAttribute="trailing" id="6FM-Nq-l6X"/>
+                    <constraint firstItem="TxB-g0-DXD" firstAttribute="bottom" secondItem="6x1-y6-8ID" secondAttribute="bottom" id="9iU-j2-4ZN"/>
+                    <constraint firstItem="TxB-g0-DXD" firstAttribute="top" secondItem="6ph-ys-q3d" secondAttribute="top" id="DVG-Ib-TtU"/>
+                    <constraint firstItem="TxB-g0-DXD" firstAttribute="leading" secondItem="kDu-me-tcn" secondAttribute="leadingMargin" id="U9o-l5-T4G"/>
+                    <constraint firstItem="6x1-y6-8ID" firstAttribute="top" secondItem="6ph-ys-q3d" secondAttribute="bottom" constant="8" symbolic="YES" id="Zfj-nb-OQx"/>
+                    <constraint firstItem="TxB-g0-DXD" firstAttribute="top" secondItem="kDu-me-tcn" secondAttribute="topMargin" constant="3" id="eFh-ci-6dz"/>
+                    <constraint firstItem="TxB-g0-DXD" firstAttribute="centerY" secondItem="kDu-me-tcn" secondAttribute="centerY" id="eqr-oS-PYt"/>
+                    <constraint firstItem="6ph-ys-q3d" firstAttribute="leading" secondItem="TxB-g0-DXD" secondAttribute="trailing" constant="8" symbolic="YES" id="guV-P0-5Om"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6ph-ys-q3d" secondAttribute="trailing" constant="1" id="pyR-h0-w2I"/>
+                    <constraint firstItem="6ph-ys-q3d" firstAttribute="leading" secondItem="6x1-y6-8ID" secondAttribute="leading" id="seN-aN-NaO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="phoneUserLabel" destination="6x1-y6-8ID" id="z6k-Y9-2Oh"/>
+                <outlet property="userNameLabel" destination="6ph-ys-q3d" id="qkV-EH-We3"/>
+                <outlet property="userPhotoImage" destination="TxB-g0-DXD" id="B3K-MZ-A6q"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
